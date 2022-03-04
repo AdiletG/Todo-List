@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.App{
+    background: #2E3035;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.App__content{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.App__clear{
+    cursor: pointer;
+    display: flex;
+    column-gap: 5px;
+    color: grey;
+    transition: .3s;
+}
+.App__clear:hover{
+    color: black;
+}
+
+.App__title_pen{
+    font-size: 35px;
+    transform: translateY(-7px);
+}
+
+.form-check-input.is-valid:checked{
+    background-color: blue!important;
+}
+.todo__item{
+    background: transparent;
+    transition: .2s;
+}
+.todo__item:hover{
+    transition: .2s;
+    background: #939CB030;
+}
+
+.popup__title-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.popup__title{
+
+}
+.popup__title-btn{
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+    transition: .3s;
+}
+.popup__title-btn:hover{
+    color: black;
+}
+
+.popup__title-input{
+    width: 100%;
+    border: 1px solid grey;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none
+}
+.popup__description-textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.tags__popup{
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    position: absolute;
+    background: white;
+    right: 100px;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: 5;
+}
+
+.tags__popup-top{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.popup__description{
+    color: grey;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .3s;
+}
+.popup__description:hover{
+    color: black;
+}
